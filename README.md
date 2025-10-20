@@ -1,8 +1,4 @@
-Bilkul! Yahaan main tumhare project ke liye **full README.md** aur **Git push commands** ek hi jagah me de raha hoon. Tum bas copy-paste karo:
 
----
-
-### **README.md (Copy-Paste)**
 
 ```markdown
 # AI-Based Inventory Management
