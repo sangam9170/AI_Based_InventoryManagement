@@ -1,11 +1,11 @@
 
 
-```markdown
+
 # AI-Based Inventory Management
 
 A full-stack application for managing inventory, sales, and demand forecasting using **FastAPI**, **MySQL**, and **Streamlit**.
 
----
+
 
 ## Features
 
@@ -14,7 +14,7 @@ A full-stack application for managing inventory, sales, and demand forecasting u
 - **Demand Forecasting**: Predict future product demand using ML.
 - **Web Dashboard**: Interactive Streamlit frontend for managing inventory and visualizing forecasts.
 
----
+
 
 ## Tech Stack
 
@@ -24,11 +24,10 @@ A full-stack application for managing inventory, sales, and demand forecasting u
 - **ML**: Forecasting models in Python (inside `app/ml`)  
 - **Environment Management**: `.env` for sensitive credentials  
 
----
 
 ## Folder Structure
 
-```
+
 
 AI_Based_InventoryManagement/
 │
@@ -53,60 +52,48 @@ AI_Based_InventoryManagement/
 
 1. **Clone the repository**
 
-```bash
+bash
 git clone https://github.com/sangam9170/AI_Based_InventoryManagement.git
 cd AI_Based_InventoryManagement
-````
+
 
 2. **Create virtual environment & install dependencies**
 
-```bash
+bash
 python -m venv venv
 venv\Scripts\activate      # Windows
 source venv/bin/activate   # Linux/Mac
 pip install -r requirements.txt
-```
-
-3. **Set up `.env` file**
-
-```env
-DB_USER=root
-DB_PASSWORD=YourMySQLPassword
-DB_HOST=localhost
-DB_NAME=inventory_db
-```
-
----
 
 ## Run Application
 
 ### 1. Start FastAPI Backend
 
-```bash
+bash
 python -m uvicorn main:app --reload
-```
+
 
 * API Docs available at: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
 ### 2. Start Streamlit Frontend
 
-```bash
+bash
 streamlit run streamlit_app/app.py
-```
+
 
 * Streamlit Dashboard will open in your default browser.
 
----
+
 
 ## Testing Database Connection
 
-```bash
+bash
 python test_db.py
-```
+
 
 * Should print `Database connected successfully!` if connection is working.
 
----
+
 
 ## Contributing
 
@@ -116,18 +103,10 @@ python test_db.py
 * Push to branch (`git push origin feature_name`)
 * Open a Pull Request
 
----
 
-## License
-
-This project is licensed under the MIT License.
-
-````
-
----
 
 ### **Git Push Commands**
-```bash
+bash
 # Initialize git repository
 git init
 
@@ -143,6 +122,6 @@ git remote add origin https://github.com/sangam9170/AI_Based_InventoryManagement
 # Push to main branch
 git branch -M main
 git push -u origin main
-````
+
 
 
