@@ -1,28 +1,35 @@
-🧠 AI-Based Inventory Management
+# 🧠 AI-Based Inventory Management
 
-A full-stack application for managing inventory, sales, and demand forecasting using FastAPI, MySQL, and Streamlit.
+A **full-stack application** for managing **inventory, sales, and demand forecasting** using **FastAPI**, **MySQL**, and **Streamlit**.  
 It combines robust backend APIs, intelligent forecasting models, and an interactive web dashboard.
 
-⚡ Features
+---
 
-📦 Product Management – Add, list, and track products in inventory
+## ⚡ Features
 
-💰 Sales Management – Record and analyze sales transactions
+- 📦 **Product Management** – Add, list, and track products in inventory  
+- 💰 **Sales Management** – Record and analyze sales transactions  
+- 📈 **Demand Forecasting** – Predict future demand using machine learning models  
+- 📊 **Web Dashboard** – Interactive Streamlit UI for data visualization  
+- ⚙️ **Secure Configurations** – Environment variables managed via `.env` file  
 
-📈 Demand Forecasting – Predict future demand using machine learning models
+---
 
-📊 Web Dashboard – Interactive Streamlit UI for data visualization
+## 🧱 Tech Stack
 
-⚙️ Secure Configurations – Environment variables managed via .env file
+| Component | Technology |
+|------------|-------------|
+| **Backend** | FastAPI |
+| **Database** | MySQL (SQLAlchemy ORM) |
+| **Frontend** | Streamlit |
+| **Machine Learning** | Python (Forecasting models in `app/ml/`) |
+| **Environment Management** | `.env` file for credentials |
 
-🧱 Tech Stack
-Component	Technology
-Backend	FastAPI
-Database	MySQL (SQLAlchemy ORM)
-Frontend	Streamlit
-Machine Learning	Python (Forecasting models in app/ml/)
-Environment Management	.env file for credentials
-📂 Folder Structure
+---
+
+## 📂 Folder Structure
+
+```
 AI_Based_InventoryManagement/
 │
 ├── app/                     # Backend logic (FastAPI)
@@ -39,82 +46,104 @@ AI_Based_InventoryManagement/
 ├── requirements.txt         # Project dependencies
 ├── test_db.py               # Optional: Test database connection
 └── .env                     # Environment variables
+```
 
-⚙️ Installation Steps
-🧩 1️⃣ Clone the Repository
+---
+
+## ⚙️ Installation Steps
+
+### 🧩 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/sangam9170/AI_Based_InventoryManagement.git
 cd AI_Based_InventoryManagement
+```
 
-🧩 2️⃣ Create Virtual Environment & Install Dependencies
+### 🧩 2️⃣ Create Virtual Environment & Install Dependencies
+```bash
 python -m venv venv
 venv\Scripts\activate      # Windows
 source venv/bin/activate   # Linux/Mac
 pip install -r requirements.txt
+```
 
-🚀 Run the Application
-▶️ Start FastAPI Backend
+---
+
+## 🚀 Run the Application
+
+### ▶️ Start FastAPI Backend
+```bash
 python -m uvicorn main:app --reload
+```
 
+📘 **API Documentation:** [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
-📘 API Documentation: http://127.0.0.1:8000/docs
+---
 
-💻 Start Streamlit Frontend
+### 💻 Start Streamlit Frontend
+```bash
 streamlit run streamlit_app/app.py
+```
 
+🌐 **The Streamlit dashboard will open automatically in your browser.**
 
-🌐 The Streamlit dashboard will open automatically in your browser.
+---
 
-🧩 Test Database Connection
+## 🧩 Test Database Connection
+```bash
 python test_db.py
+```
 
-
-✅ Expected Output:
-
+✅ **Expected Output:**
+```
 Database connected successfully!
+```
 
-🤝 Contributing
+---
+
+## 🤝 Contributing
 
 We welcome community contributions! Follow these steps:
 
-Fork the repository
+1. **Fork** the repository  
+2. **Create a feature branch**
+   ```bash
+   git checkout -b feature_name
+   ```
+3. **Commit your changes**
+   ```bash
+   git commit -m "Added new feature"
+   ```
+4. **Push to your branch**
+   ```bash
+   git push origin feature_name
+   ```
+5. **Open a Pull Request**
 
-Create a feature branch
+---
 
-git checkout -b feature_name
+## 🧾 Git Commands (Quick Reference)
 
-
-Commit your changes
-
-git commit -m "Added new feature"
-
-
-Push to your branch
-
-git push origin feature_name
-
-
-Open a Pull Request
-
-🧾 Git Commands (Quick Reference)
+```bash
 git init
 git add .
 git commit -m "Initial commit - AI-Based Inventory Management"
 git remote add origin https://github.com/sangam9170/AI_Based_InventoryManagement.git
 git branch -M main
 git push -u origin main
+```
 
-🚧 Future Enhancements
+---
 
-🤖 AI-based dynamic restocking alerts
+## 🚧 Future Enhancements
 
-📦 Barcode integration for real-time tracking
+- 🤖 AI-based dynamic restocking alerts  
+- 📦 Barcode integration for real-time tracking  
+- 📅 Automated supplier order generation  
+- 🧾 Exportable reports (PDF, Excel)
 
-📅 Automated supplier order generation
+---
 
-🧾 Exportable reports (PDF, Excel)
+## 👨‍💻 Developed By
 
-👨‍💻 Developed By
-
-Sangam Singh
-
-🎯 Empowering smart inventory through AI-driven insights.
+**[Sangam Singh](https://github.com/sangam9170)**  
+🎯 *Empowering smart inventory through AI-driven insights.*
